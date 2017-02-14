@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#4CAF50"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="start"
+        android:layout_weight="0.9"
+        android:gravity="start"
+        android:src="@drawable/cube" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7B1FA2"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:onClick="enterGame"
+            android:text="PLAY" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="#7B1FA2"
+            android:textColor="@android:color/white"
+            android:onClick="gameHelp"
+            android:text="EXIT" />
+
+        <Switch
+            android:id="@+id/backgroundMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="COORDINATE" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rlpopuler"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4914903732265878/1323356941"/>
+
+</LinearLayout>

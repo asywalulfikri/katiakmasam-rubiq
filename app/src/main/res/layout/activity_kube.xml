@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btn_sumber"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4914903732265878/8447840949"/>
+
+    <org.ivandgetic.view.MyGLSurfaceView
+        android:id="@+id/myGLSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FDD835"
+        android:layout_gravity="center"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0D47A1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/daluan"
+            android:background="#0D47A1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startGame"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:text="START GAME" />
+
+        <TextView
+            android:id="@+id/timeTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="TIME" />
+
+        <Switch
+            android:id="@+id/showCoordinateSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@android:color/white"
+            android:text="COORDINAT" />
+    </LinearLayout>
+
+</LinearLayout>
